@@ -1,12 +1,18 @@
 MyClass	classAccessSpecifier.cpp	/^class MyClass {$/;"	c	file:
+MyClass	constructorList.cpp	/^MyClass::MyClass(int xx, double dd) : x{xx}, d{dd} {$/;"	f	class:MyClass
+MyClass	constructorList.cpp	/^class MyClass {$/;"	c	file:
 MyClass	myclass.cpp	/^class MyClass {$/;"	c	file:
+d	constructorList.cpp	/^	double d;$/;"	m	class:MyClass	typeref:typename:double	file:
 d	myclass.cpp	/^	double d;$/;"	m	class:MyClass	typeref:typename:double	file:
 g	myclass.cpp	/^	bool g;$/;"	m	class:MyClass	typeref:typename:bool	file:
 getx	classAccessSpecifier.cpp	/^	int getx(){$/;"	f	class:MyClass	typeref:typename:int	file:
 main	classAccessSpecifier.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	constructorList.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	dynStorage.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	myclass.cpp	/^int main() {$/;"	f	typeref:typename:int
 message	myclass.cpp	/^void MyClass::message() {$/;"	f	class:MyClass	typeref:typename:void
+printdata	constructorList.cpp	/^void MyClass::printdata() {$/;"	f	class:MyClass	typeref:typename:void
 setx	classAccessSpecifier.cpp	/^	void setx(int myvalue){$/;"	f	class:MyClass	typeref:typename:void	file:
 x	classAccessSpecifier.cpp	/^	int x;$/;"	m	class:MyClass	typeref:typename:int	file:
+x	constructorList.cpp	/^	int x;$/;"	m	class:MyClass	typeref:typename:int	file:
 x	myclass.cpp	/^	int x;$/;"	m	class:MyClass	typeref:typename:int	file:
