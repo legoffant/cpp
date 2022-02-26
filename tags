@@ -1,0 +1,1 @@
+main	dynStorage.cpp	/^int main() {$/;"	f	typeref:typename:int
