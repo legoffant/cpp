@@ -4,18 +4,27 @@ MyClass	constructorList.cpp	/^MyClass::MyClass(int xx, double dd) : x{xx}, d{dd}
 MyClass	constructorList.cpp	/^class MyClass {$/;"	c	file:
 MyClass	myclass.cpp	/^class MyClass {$/;"	c	file:
 MyDerivedClass	polymorphism.cpp	/^class MyDerivedClass : public MyBaseClass {$/;"	c	file:
+Person	heritage.cpp	/^	explicit Person(const std::string& aname) : name{ aname } {$/;"	f	class:Person	file:
+Person	heritage.cpp	/^class Person {$/;"	c	file:
+Student	heritage.cpp	/^	Student(const std::string& aname, int asemester) : Person::Person{ aname }, semester{ asemester/;"	f	class:Student	file:
+Student	heritage.cpp	/^class Student : public Person {$/;"	c	file:
 d	constructorList.cpp	/^	double d;$/;"	m	class:MyClass	typeref:typename:double	file:
 d	myclass.cpp	/^	double d;$/;"	m	class:MyClass	typeref:typename:double	file:
 dowork	polymorphism.cpp	/^	virtual void dowork() {$/;"	f	class:MyBaseClass	typeref:typename:void	file:
 g	myclass.cpp	/^	bool g;$/;"	m	class:MyClass	typeref:typename:bool	file:
+getname	heritage.cpp	/^	std::string getname() const {$/;"	f	class:Person	typeref:typename:std::string	file:
+getsemester	heritage.cpp	/^	int getsemester() const {$/;"	f	class:Student	typeref:typename:int	file:
 getx	classAccessSpecifier.cpp	/^	int getx(){$/;"	f	class:MyClass	typeref:typename:int	file:
 main	classAccessSpecifier.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	constructorList.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	dynStorage.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	heritage.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	myclass.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	polymorphism.cpp	/^int main() {$/;"	f	typeref:typename:int
 message	myclass.cpp	/^void MyClass::message() {$/;"	f	class:MyClass	typeref:typename:void
+name	heritage.cpp	/^	std::string name;$/;"	m	class:Person	typeref:typename:std::string	file:
 printdata	constructorList.cpp	/^void MyClass::printdata() {$/;"	f	class:MyClass	typeref:typename:void
+semester	heritage.cpp	/^	int semester;$/;"	m	class:Student	typeref:typename:int	file:
 setx	classAccessSpecifier.cpp	/^	void setx(int myvalue){$/;"	f	class:MyClass	typeref:typename:void	file:
 x	classAccessSpecifier.cpp	/^	int x;$/;"	m	class:MyClass	typeref:typename:int	file:
 x	constructorList.cpp	/^	int x;$/;"	m	class:MyClass	typeref:typename:int	file:
