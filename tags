@@ -1,1 +1,7 @@
+MyClass	myclass.cpp	/^class MyClass {$/;"	c	file:
+d	myclass.cpp	/^	double d;$/;"	m	class:MyClass	typeref:typename:double	file:
+g	myclass.cpp	/^	bool g;$/;"	m	class:MyClass	typeref:typename:bool	file:
 main	dynStorage.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	myclass.cpp	/^int main() {$/;"	f	typeref:typename:int
+message	myclass.cpp	/^void MyClass::message() {$/;"	f	class:MyClass	typeref:typename:void
+x	myclass.cpp	/^	int x;$/;"	m	class:MyClass	typeref:typename:int	file:
